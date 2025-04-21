@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: /composite-test.yml@latest
+      - uses: speakmin/test/composite-test.yml@latest
         with:
           dummy-api-token: ${{ secrets.DUMMY_TOKEN }}
