@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Test Masking
 on: 
     workflow_dispatch:
 jobs:
@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./composite-test.yml
+      - uses: composite-test.yml
         with:
           dummy-token: ${{ secrets.DUMMY_TOKEN }}
