@@ -1,0 +1,10 @@
+name: My Composite Action
+inputs:
+  dummy-api-token:
+    description: 'Dummy API token'
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: echo "Token: ${{ inputs.dummy-api-token }}"
+      shell: bash
